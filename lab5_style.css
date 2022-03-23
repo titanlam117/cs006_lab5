@@ -1,0 +1,133 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ background-color: rgba(37, 39, 77,0.85); 
+ background-image: linear-gradient(
+    to right,
+    rgba(170, 171, 184, 0.301), 
+    rgba(37,39,77, 0.699)), 
+    url("japan_scenery.png");
+}
+
+p, ul, ol, dl {
+ font-family: 'Open-Sans', sans-serif;
+}
+
+h1, h2, h3 {
+ font-family: 'Roboto', sans-serif;
+}
+
+main {
+   margin-top: 0;
+   margin-left: auto; 
+   margin-right: auto;
+   color: #000000;
+   background-color:rgba(170, 171, 184, 0.5);  
+   padding: 50px;
+}
+
+
+/* Style the footer */
+.topfooter {
+  background-color: rgba(33, 33, 33, 0.95); 
+  padding: 5px;
+  color: rgb(248, 248, 219);
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase; 
+}
+.topfooter a:hover {
+  color: red;
+}
+.topfooter a:link {
+   color: rgb(248, 248, 219);
+}
+
+
+/* Style the header */
+.header {
+  background-color: rgba(170, 171, 184, 1);
+  padding: 5px;
+  color: #000000;
+  width: 100%;
+  text-align: center; /* new, added 02/14/21 */
+  font-family: 'Roboto', sans-serif;
+  
+ background-image: linear-gradient(
+    to right,
+    rgba(170, 171, 184, 0.301), 
+    rgba(37,39,77, 0.699)), 
+    url("pattern.jpg");
+}
+
+.header h1 {
+    margin-bottom: 50px;
+    color: #000;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0000ff ,
+        0 0 20px #0000ff ,
+        0 0 40px #0000ff ,
+        0 0 80px #0000ff ;
+    font-size: 38pt;
+}
+
+
+
+/* The navbar container. Class selector (topnav) used with <div> */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(33, 33, 33, 0.95); 
+  font-family: 'Raleway', sans-serif;
+  display: flex; 
+  justify-content: center; 
+  align-content: center;
+}
+
+/* The navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(248, 248, 219);
+  padding: 16px 10px;
+  text-decoration: none;
+}
+
+  /* links - change color on hover */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
+.topnav a:hover {
+  background-color: rgb(248, 248, 219);
+  color: black;
+}
+
+/* create two equal columns that float side-by-side */
+.column {
+  float: left;
+  width: 49.9%;
+}
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsive layout - on smaller screens (660px wide or less), 
+   stacks three columns on top of each other in horizontal 
+   sequence instead of next to each other on smaller screens */
+@media screen and (max-width: 600px) {
+ .column {
+  width: 100%;
+  padding-right:50px;
+  padding-left:50px;
+
+ }
+}
+
+
+
